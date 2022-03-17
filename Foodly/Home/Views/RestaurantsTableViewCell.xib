@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="RestaurantsTableViewCell" customModule="Foodly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rRa-X6-Emc">
+                        <rect key="frame" x="10" y="10" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="3yT-uB-McM"/>
+                            <constraint firstAttribute="height" constant="70" id="sXY-08-A2o"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEO-nj-Ybg">
+                        <rect key="frame" x="340" y="30" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="buttonBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xh0-G7-hBF">
+                        <rect key="frame" x="100" y="23" width="90" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3G-9f-fNq">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" name="titleLabelColour"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oq0-oZ-vMV">
+                                <rect key="frame" x="0.0" y="29.5" width="90" height="14.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXv-xc-6BC">
+                                        <rect key="frame" x="0.0" y="0.0" width="31" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" name="otherLabelColour"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e7f-3w-zxq">
+                                        <rect key="frame" x="41" y="0.0" width="49" height="14.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WMe-YR-yAs">
+                                                <rect key="frame" x="0.0" y="3" width="10" height="9"/>
+                                                <color key="tintColor" name="otherLabelColour"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="10" id="YCD-df-bzk"/>
+                                                    <constraint firstAttribute="height" constant="10" id="m2T-OW-OHN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adC-lo-3Wk">
+                                                <rect key="frame" x="18" y="0.0" width="31" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="otherLabelColour"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" name="generalScreenBackgroundColour"/>
+                <constraints>
+                    <constraint firstItem="rRa-X6-Emc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5qq-f7-3zm"/>
+                    <constraint firstItem="SEO-nj-Ybg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="7N0-DL-y7D"/>
+                    <constraint firstAttribute="trailing" secondItem="SEO-nj-Ybg" secondAttribute="trailing" constant="20" id="NaK-g4-Vhu"/>
+                    <constraint firstAttribute="bottom" secondItem="rRa-X6-Emc" secondAttribute="bottom" constant="10" id="S3u-O6-2eK"/>
+                    <constraint firstItem="rRa-X6-Emc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WAh-ee-ZsL"/>
+                    <constraint firstItem="Xh0-G7-hBF" firstAttribute="leading" secondItem="rRa-X6-Emc" secondAttribute="trailing" constant="20" id="hFC-0j-O6v"/>
+                    <constraint firstItem="Xh0-G7-hBF" firstAttribute="centerY" secondItem="rRa-X6-Emc" secondAttribute="centerY" id="qm3-aW-pVi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="discountLabel" destination="SEO-nj-Ybg" id="LRV-u1-kcg"/>
+                <outlet property="mealName" destination="aXv-xc-6BC" id="xdH-nU-wk7"/>
+                <outlet property="restaurantImage" destination="rRa-X6-Emc" id="I6S-Ee-F2i"/>
+                <outlet property="restaurantName" destination="c3G-9f-fNq" id="22f-1g-AxA"/>
+                <outlet property="timeLabel" destination="adC-lo-3Wk" id="CuV-HV-1tT"/>
+            </connections>
+            <point key="canvasLocation" x="-181.8840579710145" y="-13.392857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <namedColor name="buttonBackgroundColor">
+            <color red="0.42699998617172241" green="0.37999999523162842" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="generalScreenBackgroundColour">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="otherLabelColour">
+            <color red="0.4309999942779541" green="0.50199997425079346" blue="0.68999999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="titleLabelColour">
+            <color red="0.093999996781349182" green="0.090000003576278687" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

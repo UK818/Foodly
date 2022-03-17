@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableViewCell" rowHeight="97" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="Foodly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k0o-yA-6XG">
+                        <rect key="frame" x="100" y="28" width="90" height="41"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO0-nw-uTa">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="titleLabelColour"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="T5b-Rf-Zf8">
+                                <rect key="frame" x="0.0" y="31" width="90" height="10"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uh-mE-d7z">
+                                        <rect key="frame" x="0.0" y="0.0" width="31" height="10"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" name="otherLabelColour"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZKO-hJ-sfM">
+                                        <rect key="frame" x="41" y="0.0" width="49" height="10"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="i8Y-r0-Q4J">
+                                                <rect key="frame" x="0.0" y="0.5" width="10" height="9"/>
+                                                <color key="tintColor" name="otherLabelColour"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="10" id="dKI-k2-XDw"/>
+                                                    <constraint firstAttribute="height" constant="10" id="xLi-Ga-pyi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6Y-6Q-gKp">
+                                                <rect key="frame" x="18" y="0.0" width="31" height="10"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="otherLabelColour"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qDw-sB-Jwm">
+                        <rect key="frame" x="10" y="8" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="NmD-y4-HjV"/>
+                            <constraint firstAttribute="height" constant="80" id="S3o-0m-MNu"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="b4d-eu-RHr"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="foH-hl-MbA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wut-Fu-ywP">
+                        <rect key="frame" x="334.5" y="40" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="buttonBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k0o-yA-6XG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="28" id="5gx-rO-r9e"/>
+                    <constraint firstItem="wut-Fu-ywP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="Dza-yW-pCr"/>
+                    <constraint firstItem="qDw-sB-Jwm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="FdC-G3-e7b"/>
+                    <constraint firstAttribute="bottom" secondItem="k0o-yA-6XG" secondAttribute="bottom" constant="28" id="MUK-bJ-sTB"/>
+                    <constraint firstAttribute="bottom" secondItem="wut-Fu-ywP" secondAttribute="bottom" constant="40" id="RrQ-11-sC4"/>
+                    <constraint firstAttribute="trailing" secondItem="wut-Fu-ywP" secondAttribute="trailing" constant="20" id="dw9-Qm-yJL"/>
+                    <constraint firstItem="k0o-yA-6XG" firstAttribute="leading" secondItem="qDw-sB-Jwm" secondAttribute="trailing" constant="10" id="h5v-yj-e58"/>
+                    <constraint firstItem="qDw-sB-Jwm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="mnP-LN-kfS"/>
+                    <constraint firstAttribute="bottom" secondItem="qDw-sB-Jwm" secondAttribute="bottom" constant="8" id="nu1-4l-bAb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="discountLabel" destination="wut-Fu-ywP" id="6e2-os-rww"/>
+                <outlet property="mealName" destination="9Uh-mE-d7z" id="Cmd-Qe-iZx"/>
+                <outlet property="restaurantImage" destination="qDw-sB-Jwm" id="trN-td-5RH"/>
+                <outlet property="restaurantName" destination="EO0-nw-uTa" id="sNF-Ca-oJk"/>
+                <outlet property="timeLabel" destination="X6Y-6Q-gKp" id="WBy-eY-kE7"/>
+            </connections>
+            <point key="canvasLocation" x="155" y="120"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <namedColor name="buttonBackgroundColor">
+            <color red="0.42699998617172241" green="0.37999999523162842" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="otherLabelColour">
+            <color red="0.4309999942779541" green="0.50199997425079346" blue="0.68999999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="titleLabelColour">
+            <color red="0.093999996781349182" green="0.090000003576278687" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
